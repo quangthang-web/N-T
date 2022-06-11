@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .box{
+ background-image: url(/132786130_420123072369098_3258611252040072506_n.jpg);
+ background-repeat: no-repeat;
+ width: 5vw;
+height: 12vh;
+ background-position: center;
+ background-attachment: fixed;
+ opacity: 0;
+ transition:all 1s;
+
+}
+.container .box.show{
+opacity: 1;
+    width: 101px;
+    height: 41px;
+}
+.modal-body {
+    font-size: 23px;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive;
+}

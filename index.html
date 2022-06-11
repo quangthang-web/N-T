@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <button type="button" class="btn btn-primary position-absolute" style="top:15px; left: 15px;" data-bs-toggle="modal" id="modal-btn"
+        data-bs-target="#exampleModal">
+        Bấm vào đây nhé
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tặng bạn cái này nhé</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Mình làm cái này cảm ơn trong xuất thời gian qua
+                    nói chuyện với bạn nhiều lúc vui lắm. Thấy bạn cái dạo không được vui thì mình cũng cảm thấy buồn
+                    thay bạn.
+                    Nhưng chuyện qua rồi giờ restart lại thôi. Hãy thử yêu 1 trang trai goodboy 1 lần đi sẽ có nhiều cái
+                    hay đấy. Nếu bạn buồn không vui cứ nhắn cho mình một tin lúc nào cũng trả lại trừ lúc ngủ.
+                    Mình trai IT thì mình cũng không biết nhiều về cái kiểu tán gái lắm nên cũng chịu cái đó luôn đổi
+                    lại thì mình sống khá tình cảm :D :).
+                    <h2>Luôn Vui Vẻ Nhé Bạn Tôi.</h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script>
+        const container = document.querySelector(".container")
+        for (let i = 0; i < 300; i++) {
+            let box = document.createElement("div")
+            box.classList.add("box")
+            container.appendChild(box)
+        }
+        let boxes = document.querySelectorAll(".box")
+        let count = 0;
+        let interval = setInterval(() => {
+            boxes[count].classList.add("show")
+            count++;
+            if (count == boxes.length) {
+                clearInterval(interval)
+            }
+        }, 50)
+    </script>
+</body>
+
+</html>
