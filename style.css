@@ -16,7 +16,7 @@ body {
     justify-content: center;
 }
 .container .box{
- background-image: url(./img/132786130_420123072369098_3258611252040072506_n.jpg);
+ background-image: url("./img/132786130_420123072369098_3258611252040072506_n.jpg");
  background-repeat: no-repeat;
  width: 5vw;
 height: 12vh;
